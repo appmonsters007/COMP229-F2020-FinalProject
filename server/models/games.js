@@ -7,11 +7,11 @@ let mongoose = require('mongoose');
 
 // create a model class
 let Game = mongoose.Schema({
-    title: String,
+    name: String,
     description: String,
-    price: Number,
-    author: String,
-    genre: String
+    owner: String,
+    active: String,
+    date: String
 },
 {
   collection: "games"

@@ -38,12 +38,19 @@ Web site name: Tournament Site
           <li><a href="/"><i class="fa fa-home fa-lg"></i> Home</a></li>
         <% } %>
 
-          <% if(title == "tournament") { %>
-          <li class="active"><a href="/tournament"><i class="fa fa-book fa-lg">
-          </i> Books List</a></li>
+         <% if(title == "Login") { %>
+          <li class="active"><a href="/login"><i class="fas fa-sign-in-alt"></i>
+          Login</a></li>
           <% } else { %>
-            <li><a href="/tournament"><i class="fa fa-book fa-lg">
-            </i> Tournament</a></li>
+            <li><a href="/login"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+          <% } %>
+
+          <% if(title == "Register") { %>
+          <li class="active"><a href="/register"><i class="fa fa-book fa-lg">
+          </i>Register</a></li>
+          <% } else { %>
+            <li><a href="/register"><i class="fa fa-book fa-lg">
+            </i> Register</a></li>
           <% } %>
 
       </ul>

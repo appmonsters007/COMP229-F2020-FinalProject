@@ -27,6 +27,7 @@ mongoDB.once('open', ()=> {
 // define routers
 let index = require('../routes/index'); // top level routes
 let books = require('../routes/games'); // routes for tournaments
+const games = require('../models/games');
 
 let app = express();
 
@@ -44,7 +45,7 @@ app.use(express.static(path.join(__dirname, '../../client')));
 
 // route redirects
 app.use('/', index);
-app.use('/books229', books);
+app.use('/tournament', games);
 
 
 // catch 404 and forward to error handler

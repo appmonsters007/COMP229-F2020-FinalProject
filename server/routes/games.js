@@ -42,11 +42,11 @@ router.post('/details/add', (req, res, next) =>
 {
       let newMatch = match(
     {
-        "title": req.body.title,
+        "name": req.body.name,
         "description": req.body.description,
-        "price": req.body.price,
-        "author": req.body.author,
-        "genre": req.body.genre
+        "owner": req.body.owner,
+        "active": req.body.active,
+        "date": req.body.date
     });
 
     match.create(newMatch, (err, match) =>
@@ -90,11 +90,11 @@ router.post('/details/edit/:id', (req, res, next) => {
 
   let updateMatch = match({
     "_id": id,
-    "title": req.body.title,
+    "name": req.body.name,
     "description": req.body.description,
-    "price": req.body.price,
-    "author": req.body.author,
-    "genre": req.body.genre
+    "owner": req.body.owner,
+    "active": req.body.active,
+    "date": req.body.date
   });
 
   match.updateOne({_id: id}, updateMatch, (err) =>{
