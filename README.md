@@ -1,5 +1,5 @@
-# COMP229-F2019-MidTerm Test
+# COMP229-F2020-FinalProject
 
-## Welcome to the MidTerm Project - the Favourite Book List App
+## Welcome to the Final Project - Tournament Site 
 
 please use **`npm install`** to install project dependencies
